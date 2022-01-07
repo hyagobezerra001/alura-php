@@ -30,12 +30,12 @@ echo "Calculadora IMC" . PHP_EOL;
 $altura = (float) readline("Digite Sua Altura (cm): ");
 $peso = (int) readline("Digite seu Peso (kg): ");
 
-$imc = round(($peso) / ($altura ** 2), 2);
+echo "Seu IMC -> " . $imc = round(($peso) / ($altura ** 2), 2) . PHP_EOL;
 
 if ($imc < 18.5) {
-    echo "Abaixo do Peso" . PHP_EOL;
+    echo "Resuldado: Abaixo do Peso" . PHP_EOL;
 } elseif ($imc < 24.9) {
-    echo "Peso Ideal" . PHP_EOL;
+    echo "Resuldado: Peso Ideal" . PHP_EOL;
 } else {
-    echo "Acima do Peso" . PHP_EOL;
+    echo "Resuldado: Acima do Peso" . PHP_EOL;
 }
